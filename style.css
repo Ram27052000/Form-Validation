@@ -1,0 +1,129 @@
+{
+  padding:0;
+  margin :0;
+  box-sizing:content-box;
+  font-family:'Italic',cursive;
+}
+body
+{
+  background: linear-gradient(to left,darkblue,skyblue);
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.container
+{
+  background-color: rgb(216, 214, 214);
+  box-shadow: rgb(0,0,0)0px 5px 15px;
+  width: 400px;
+}
+.header
+{
+  color: white;
+  text-align: center;
+  background-color: purple;
+  padding:10px 30px;
+  border-bottom: 2px solid black;
+}
+
+.form
+{
+  padding:20px 40px;
+}
+
+.form-group
+{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-group label
+{
+  display:block;
+  margin-bottom: 5px;
+}
+.form-group input
+{
+  border: 2px black;
+  display: block;
+  border-radius: 4px;
+  font-size:.8rem;
+  width: 100%;
+  padding:10px;
+
+}
+.form input::placeholder
+{
+  color:black;
+}
+.form-group i
+{
+  position:absolute;
+  right:10px;
+  top:35px;
+  visibility: hidden;
+}
+.form-group span{
+  position: absolute;
+  bottom:0;
+  left:0;
+  font-weight:bolder;
+  font-size:1rem;
+  font-style:italic;
+  visibility: hidden;
+}
+.form-group.success input
+{
+  border-color:green;
+}
+.form-group.error input
+{
+  border-color:red;
+}
+.form-group.error span
+{
+  color:red;
+  visibility: visible;
+}
+.form-group.success i.ion-checkmark-circled
+{
+  visibility:visible;
+  color:green;
+}
+
+.form-group.error i.ion-checkmark-circled
+{
+  visibility:hidden;
+  color:green;
+}
+
+
+.form-group.error i.ion-alert
+{
+  visibility: visible;
+  color:red;
+}
+
+.form-group.success i.ion-success
+{
+  visibility: hidden;
+  color:red;
+}
+
+.form #submit{
+  background-color: purple;
+  border:none;
+  outline:none;
+  color:black;
+  width:100%;
+  padding:10px;
+  font-size:1rem;
+  border-radius: 4px;
+  cursor:pointer;
+  transition:all .5s;
+}
+.form #submit:hover{
+  background-color: red;
+}
